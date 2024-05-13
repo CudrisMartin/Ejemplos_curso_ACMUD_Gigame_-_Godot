@@ -1,0 +1,98 @@
+[gd_scene load_steps=9 format=3 uid="uid://cndi16o0tuaj8"]
+
+[ext_resource type="Script" path="res://Clase 8/Jugador_AP.gd" id="1_1x8lq"]
+[ext_resource type="Texture2D" uid="uid://db464fyqpcftm" path="res://Paquetes_de_recursos/Adventurer/adventurer-Sheet.png" id="2_hf0q7"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_equfc"]
+radius = 8.0
+height = 22.0
+
+[sub_resource type="Animation" id="Animation_nuvkr"]
+resource_name = "fall"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [18, 23]
+}
+
+[sub_resource type="Animation" id="Animation_tsx5c"]
+resource_name = "idle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0, 3]
+}
+
+[sub_resource type="Animation" id="Animation_pwb8h"]
+resource_name = "jump"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [14, 17]
+}
+
+[sub_resource type="Animation" id="Animation_cc4jh"]
+resource_name = "run"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [8, 13]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_v0atw"]
+_data = {
+"fall": SubResource("Animation_nuvkr"),
+"idle": SubResource("Animation_tsx5c"),
+"jump": SubResource("Animation_pwb8h"),
+"run": SubResource("Animation_cc4jh")
+}
+
+[node name="Jugador_AP" type="CharacterBody2D"]
+texture_filter = 1
+position = Vector2(456, 208)
+scale = Vector2(3, 3)
+script = ExtResource("1_1x8lq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 5)
+shape = SubResource("CapsuleShape2D_equfc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.333328, -1.66667)
+texture = ExtResource("2_hf0q7")
+hframes = 7
+vframes = 11
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_v0atw")
+}

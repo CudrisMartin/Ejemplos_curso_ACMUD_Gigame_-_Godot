@@ -1,0 +1,215 @@
+[gd_scene load_steps=18 format=3 uid="uid://dqc5cvuaaltaj"]
+
+[ext_resource type="Texture2D" uid="uid://vyhqgix3ixrb" path="res://icon.svg" id="1_dp1nm"]
+[ext_resource type="Script" path="res://Clase 8/Jugador_AP.gd" id="2_5aug1"]
+[ext_resource type="Texture2D" uid="uid://db464fyqpcftm" path="res://Paquetes_de_recursos/Adventurer/adventurer-Sheet.png" id="3_eyt4x"]
+[ext_resource type="PackedScene" uid="uid://b083aqvagtqo3" path="res://Clase 8/Jugador_AS.tscn" id="4_87muk"]
+[ext_resource type="Texture2D" uid="uid://bbcmx6ov5ykc6" path="res://Paquetes_de_recursos/Pixel Adventure 1/Free/Items/Boxes/Box2/Idle.png" id="5_gsor4"]
+[ext_resource type="Script" path="res://Clase 8/Detectar_Clicks.gd" id="6_y78ya"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e1uc7"]
+size = Vector2(128, 648)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n3tp8"]
+size = Vector2(1280, 129)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_equfc"]
+radius = 8.0
+height = 22.0
+
+[sub_resource type="Animation" id="Animation_nuvkr"]
+resource_name = "fall"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [18, 23]
+}
+
+[sub_resource type="Animation" id="Animation_tsx5c"]
+resource_name = "idle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0, 3]
+}
+
+[sub_resource type="Animation" id="Animation_pwb8h"]
+resource_name = "jump"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [14, 17]
+}
+
+[sub_resource type="Animation" id="Animation_cc4jh"]
+resource_name = "run"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [8, 13]
+}
+
+[sub_resource type="Animation" id="Animation_3xirb"]
+resource_name = "Attack"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [41, 46]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.5),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"funcion_cualquiera"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_v0atw"]
+_data = {
+"Attack": SubResource("Animation_3xirb"),
+"fall": SubResource("Animation_nuvkr"),
+"idle": SubResource("Animation_tsx5c"),
+"jump": SubResource("Animation_pwb8h"),
+"run": SubResource("Animation_cc4jh")
+}
+
+[sub_resource type="Animation" id="Animation_0bcp6"]
+resource_name = "tambaleo"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.523599, 0.0, 0.523599, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nskfo"]
+_data = {
+"tambaleo": SubResource("Animation_0bcp6")
+}
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 324)
+shape = SubResource("RectangleShape2D_e1uc7")
+
+[node name="Icon" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(0, 324)
+scale = Vector2(1, 5.0625)
+texture = ExtResource("1_dp1nm")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(1152, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(0, 324)
+shape = SubResource("RectangleShape2D_e1uc7")
+
+[node name="Icon" type="Sprite2D" parent="StaticBody2D2"]
+position = Vector2(0, 324)
+scale = Vector2(1, 5.0625)
+texture = ExtResource("1_dp1nm")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(576, 584.5)
+shape = SubResource("RectangleShape2D_n3tp8")
+
+[node name="Icon" type="Sprite2D" parent="StaticBody2D3"]
+position = Vector2(576, 584)
+scale = Vector2(10, 1)
+texture = ExtResource("1_dp1nm")
+
+[node name="Jugador_AP" type="CharacterBody2D" parent="."]
+texture_filter = 1
+position = Vector2(456, 208)
+scale = Vector2(3, 3)
+script = ExtResource("2_5aug1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Jugador_AP"]
+position = Vector2(0, 5)
+shape = SubResource("CapsuleShape2D_equfc")
+
+[node name="Sprite2D" type="Sprite2D" parent="Jugador_AP"]
+position = Vector2(-0.333328, -1.66667)
+texture = ExtResource("3_eyt4x")
+hframes = 7
+vframes = 11
+frame = 46
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Jugador_AP"]
+libraries = {
+"": SubResource("AnimationLibrary_v0atw")
+}
+
+[node name="Jugador_AS" parent="." instance=ExtResource("4_87muk")]
+position = Vector2(1009, 295)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(189, 109)
+rotation = -0.14973
+scale = Vector2(7.125, 7.125)
+texture = ExtResource("5_gsor4")
+script = ExtResource("6_y78ya")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
+libraries = {
+"": SubResource("AnimationLibrary_nskfo")
+}
+
+[connection signal="animation_finished" from="Jugador_AP/AnimationPlayer" to="Jugador_AP" method="_on_animation_player_animation_finished"]
