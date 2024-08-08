@@ -1,11 +1,12 @@
 [gd_scene load_steps=16 format=3 uid="uid://dqc5cvuaaltaj"]
 
 [ext_resource type="Script" path="res://Clase 8/Jugador_AP.gd" id="2_5aug1"]
-[ext_resource type="Texture2D" uid="uid://db464fyqpcftm" path="res://Paquetes_de_recursos/Sprites/Adventurer/adventurer-Sheet.png" id="3_eyt4x"]
+[ext_resource type="Texture2D" uid="uid://db464fyqpcftm" path="res://Assets/Sprites/Adventurer/adventurer-Sheet.png" id="3_eyt4x"]
 [ext_resource type="PackedScene" uid="uid://b083aqvagtqo3" path="res://Clase 8/Jugador_AS.tscn" id="4_87muk"]
-[ext_resource type="Texture2D" uid="uid://bbcmx6ov5ykc6" path="res://Paquetes_de_recursos/Sprites/Pixel Adventure 1/Free/Items/Boxes/Box2/Idle.png" id="5_gsor4"]
-[ext_resource type="TileSet" uid="uid://cbtuj76ux3b66" path="res://Recursos globales/Tileset_creado.tres" id="6_fmsvk"]
+[ext_resource type="Texture2D" uid="uid://bbcmx6ov5ykc6" path="res://Assets/Sprites/Pixel Adventure 1/Free/Items/Boxes/Box2/Idle.png" id="5_gsor4"]
+[ext_resource type="TileSet" uid="uid://cbtuj76ux3b66" path="res://Recursos de Godot/Tileset_creado.tres" id="6_fmsvk"]
 [ext_resource type="Script" path="res://Clase 8/Detectar_Clicks.gd" id="6_y78ya"]
+
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_equfc"]
 radius = 8.0
