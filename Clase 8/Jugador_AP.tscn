@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://cndi16o0tuaj8"]
 
 [ext_resource type="Script" path="res://Clase 8/Jugador_AP.gd" id="1_1x8lq"]
-[ext_resource type="Texture2D" uid="uid://db464fyqpcftm" path="res://Paquetes_de_recursos/Adventurer/adventurer-Sheet.png" id="2_hf0q7"]
+[ext_resource type="Texture2D" uid="uid://db464fyqpcftm" path="res://Paquetes_de_recursos/Sprites/Adventurer/adventurer-Sheet.png" id="2_hf0q7"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_equfc"]
 radius = 8.0
@@ -78,7 +78,6 @@ _data = {
 
 [node name="Jugador_AP" type="CharacterBody2D"]
 texture_filter = 1
-position = Vector2(456, 208)
 scale = Vector2(3, 3)
 script = ExtResource("1_1x8lq")
 
