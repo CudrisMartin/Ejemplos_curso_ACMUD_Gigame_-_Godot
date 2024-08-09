@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cae74lhnnqf7w"]
+
+[ext_resource type="FontFile" uid="uid://d4dfqbpei5yen" path="res://Assets/Fuentes/PressStart2P-Regular.ttf" id="1_il3l3"]
+
+[resource]
+Label/font_sizes/font_size = 8
+Label/fonts/font = ExtResource("1_il3l3")
+RichTextLabel/fonts/normal_font = ExtResource("1_il3l3")

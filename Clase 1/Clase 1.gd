@@ -1,11 +1,5 @@
 extends Node
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+func recuperar_jugador(body):
+	$Mundo/Tutoriales/RL_Salvacion.show()
+	$Mundo/Jugador_AP.global_position = $Mundo/Escenario/Recuperacion.global_position

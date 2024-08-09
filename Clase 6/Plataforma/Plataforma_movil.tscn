@@ -4,6 +4,7 @@
 [ext_resource type="Script" path="res://Clase 6/Plataforma/Jugador.gd" id="2_4tduv"]
 [ext_resource type="Texture2D" uid="uid://pdfylibt6x3j" path="res://Clase 6/Plataforma/Giganto.PNG" id="3_21ubk"]
 [ext_resource type="Texture2D" uid="uid://vyhqgix3ixrb" path="res://icon.svg" id="4_mrjrk"]
+[ext_resource type="PackedScene" uid="uid://v3bbiesfht3u" path="res://Clase 6/Plataforma/Plataforma.tscn" id="5_2gsqj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nmsu5"]
 size = Vector2(35, 32)
@@ -16,9 +17,6 @@ _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 712, 574, 0, 0, 0, 0, 712, 200, 0, 0, 0, 0, 712, 574)
 }
 point_count = 3
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_hmte3"]
-size = Vector2(248, 64)
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_s672p"]
 
@@ -72,18 +70,8 @@ position = Vector2(712, 574)
 rotation = -1.5708
 rotates = false
 
-[node name="AnimatableBody2D" type="AnimatableBody2D" parent="Path2D/PathFollow2D"]
-rotation = 1.5708
-disable_mode = 2
-sync_to_physics = false
-
-[node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D/AnimatableBody2D"]
-modulate = Color(0.137255, 0.87451, 0, 1)
-scale = Vector2(1.9375, 0.5)
-texture = ExtResource("4_mrjrk")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/AnimatableBody2D"]
-shape = SubResource("RectangleShape2D_hmte3")
+[node name="Plataforma" parent="Path2D/PathFollow2D" node_paths=PackedStringArray("seguidor") instance=ExtResource("5_2gsqj")]
+seguidor = NodePath("..")
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2(712, 648)
