@@ -1,10 +1,10 @@
 [gd_scene load_steps=9 format=3 uid="uid://cndi16o0tuaj8"]
 
 [ext_resource type="Script" path="res://Clase 8/Jugador_AP.gd" id="1_1x8lq"]
-[ext_resource type="Texture2D" uid="uid://dopjf8vkrui2f" path="res://Assets/Sprites/Adventurer/adventurer-Sheet.png" id="2_hf0q7"]
+[ext_resource type="Texture2D" uid="uid://db464fyqpcftm" path="res://Assets/Sprites/Adventurer/adventurer-Sheet.png" id="2_hf0q7"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_tuae4"]
-size = Vector2(10.6667, 29.3333)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nt8lm"]
+radius = 8.0
 
 [sub_resource type="Animation" id="Animation_nuvkr"]
 resource_name = "fall"
@@ -83,7 +83,7 @@ script = ExtResource("1_1x8lq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.58946e-07, 1.33333)
-shape = SubResource("RectangleShape2D_tuae4")
+shape = SubResource("CapsuleShape2D_nt8lm")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-0.333328, -1.66667)
