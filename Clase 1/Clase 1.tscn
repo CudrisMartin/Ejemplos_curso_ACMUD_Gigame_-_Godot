@@ -230,7 +230,7 @@ motion_scale = Vector2(0.2, 0.2)
 motion_mirroring = Vector2(1337.86, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Mundo/Fondo/Cielo"]
-position = Vector2(668.952, 346.56)
+position = Vector2(672, 352)
 scale = Vector2(3.48413, 3.512)
 texture = ExtResource("3_oiqui")
 
