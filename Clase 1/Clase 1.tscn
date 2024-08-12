@@ -3,13 +3,13 @@
 [ext_resource type="Script" path="res://Clase 1/Clase 1.gd" id="1_qisws"]
 [ext_resource type="Theme" uid="uid://cae74lhnnqf7w" path="res://Recursos de Godot/Temas Clase 1.tres" id="2_e2fvw"]
 [ext_resource type="TileSet" uid="uid://cbtuj76ux3b66" path="res://Recursos de Godot/Tileset_creado.tres" id="2_oj1fa"]
-[ext_resource type="Texture2D" uid="uid://cn7bvnifiniw8" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/environment/layers/back.png" id="3_oiqui"]
+[ext_resource type="Texture2D" uid="uid://ctimbhuac0p4g" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/environment/layers/back.png" id="3_oiqui"]
 [ext_resource type="PackedScene" uid="uid://cndi16o0tuaj8" path="res://Clase 8/Jugador_AP.tscn" id="4_cyasb"]
 [ext_resource type="Texture2D" uid="uid://vyhqgix3ixrb" path="res://icon.svg" id="6_5fk7m"]
 [ext_resource type="PackedScene" uid="uid://cxnit1wuxsumx" path="res://Clase 1/GodotPlush.tscn" id="7_hkhas"]
-[ext_resource type="Texture2D" uid="uid://it5kququ7nd0" path="res://Assets/ACM-GiGame.png" id="7_rdkef"]
+[ext_resource type="Texture2D" uid="uid://c3ybxj2fsefoy" path="res://Assets/ACM-GiGame.png" id="7_rdkef"]
 [ext_resource type="PackedScene" uid="uid://v3bbiesfht3u" path="res://Clase 6/Plataforma/Plataforma.tscn" id="8_cdcoc"]
-[ext_resource type="Texture2D" uid="uid://b0sihiu37b3o3" path="res://Assets/Sprites/mystic_woods_free_2.1/sprites/characters/slime.png" id="9_pnf3i"]
+[ext_resource type="Texture2D" uid="uid://b6fgujs8ayc1s" path="res://Assets/Sprites/mystic_woods_free_2.1/sprites/characters/slime.png" id="9_pnf3i"]
 
 [sub_resource type="Curve2D" id="Curve2D_scjhi"]
 _data = {
@@ -272,7 +272,8 @@ scale = Vector2(0.256256, 0.256256)
 texture = ExtResource("7_rdkef")
 
 [node name="Jugador_AP" parent="Mundo" instance=ExtResource("4_cyasb")]
-position = Vector2(4032, 256)
+position = Vector2(248, 288)
+metadata/_edit_group_ = true
 
 [node name="Camera2D" type="Camera2D" parent="Mundo/Jugador_AP"]
 limit_left = 0

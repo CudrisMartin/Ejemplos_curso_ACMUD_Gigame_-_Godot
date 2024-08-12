@@ -11,9 +11,11 @@ config_version=5
 [application]
 
 config/name="Ejemplos curso ACMUD Gigame - Godot"
+config/description="Repositorio con los ejemplos usados en el curso Desarrollo de Videojuegos 2D en Godot Engine dictado por el grupo academico ACMUD."
+config/version="1.0"
 run/main_scene="res://Clase 8/Animaciones.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://Assets/ACM-GiGame.png"
 
 [display]
 
