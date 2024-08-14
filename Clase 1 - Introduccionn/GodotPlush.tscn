@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cxnit1wuxsumx"]
 
-[ext_resource type="Texture2D" uid="uid://bxk2a275cqdcs" path="res://Assets/Sprites/Godot plush.png" id="1_rbwy1"]
-[ext_resource type="Theme" path="res://Recursos de Godot/Temas Clase 1.tres" id="2_p85ll"]
+[ext_resource type="Texture2D" uid="uid://bxk2a275cqdcs" path="res://Assets/Sprites/Propios/Godot plush.png" id="1_rbwy1"]
+[ext_resource type="Theme" uid="uid://cae74lhnnqf7w" path="res://Recursos de Godot/Temas Clase 1.tres" id="2_p85ll"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_mnxl0"]
 friction = 0.0
