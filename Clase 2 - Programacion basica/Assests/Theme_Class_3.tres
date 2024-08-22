@@ -1,0 +1,14 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://lsvn17lhspnm"]
+
+[ext_resource type="FontFile" uid="uid://dt3r7cbr4fanf" path="res://Assets/Fuentes/PressStart2P-Regular.ttf" id="1_85oej"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cw870"]
+bg_color = Color(0.00784314, 0.188235, 0.278431, 1)
+
+[resource]
+default_font = ExtResource("1_85oej")
+OptionButton/colors/font_color = Color(1, 0.717647, 0.0117647, 1)
+OptionButton/colors/font_focus_color = Color(1, 0.717647, 0.0117647, 1)
+OptionButton/colors/font_hover_color = Color(0.509804, 0.356863, 0, 1)
+OptionButton/colors/font_pressed_color = Color(1, 0.717647, 0.0117647, 1)
+OptionButton/styles/normal = SubResource("StyleBoxFlat_cw870")

@@ -1,6 +1,6 @@
 extends Node2D
 
-const CARROS = preload("res://Clase 3/CarroImp.tscn")
+const CARROS = preload("res://Clase 3 - POO/CarroImp.tscn")
 
 # Se crea una nueva escena CarroImpl al presionarse el boton.
 func _on_button_pressed():
