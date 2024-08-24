@@ -15,12 +15,16 @@ config/description="Repositorio con los ejemplos usados en el curso Desarrollo d
 config/version="1.0"
 run/main_scene="res://Clase 8/Animaciones.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
-config/icon="res://Assets/Sprites/Propios/ACM-GiGame.png"
+config/icon="res://Assets/Sprites/Propios/Logos GiGame/ACM-GiGame.png"
 
 [display]
 
 window/size/mode=2
 window/stretch/mode="viewport"
+
+[global_group]
+
+Proyectil=""
 
 [input]
 

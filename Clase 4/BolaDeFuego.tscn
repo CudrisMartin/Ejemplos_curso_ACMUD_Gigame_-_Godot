@@ -1,12 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://bkt7vcsevxrcl"]
+[gd_scene load_steps=5 format=3 uid="uid://bkt7vcsevxrcl"]
 
-[ext_resource type="Script" path="res://Clase 4/BolaDeFuego.gd" id="1_dfi85"]
-[ext_resource type="Texture2D" uid="uid://cvd53hnnitema" path="res://Clase 4/Bola_de_Fuego.png" id="1_gaxgw"]
+[ext_resource type="Script" path="res://Clase 4/Proyectil.gd" id="1_dfi85"]
+[ext_resource type="Texture2D" uid="uid://cvd53hnnitema" path="res://Assets/Sprites/Propios/Bola_de_Fuego.png" id="1_gaxgw"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_0gwy0"]
 radius = 14.0
 
-[node name="Bola de fuego" type="CharacterBody2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_qejkh"]
+radius = 15.0
+
+[node name="Bola de fuego" type="CharacterBody2D" groups=["Proyectil"]]
+collision_layer = 2
+collision_mask = 2
 motion_mode = 1
 script = ExtResource("1_dfi85")
 
@@ -15,8 +20,13 @@ texture_filter = 1
 position = Vector2(-7, 0)
 texture = ExtResource("1_gaxgw")
 
-[node name="Marker2D" type="Marker2D" parent="Sprite2D"]
-position = Vector2(47, 0)
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_0gwy0")
+
+[node name="Hitbox" type="Area2D" parent="."]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+shape = SubResource("CircleShape2D_qejkh")
+
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]

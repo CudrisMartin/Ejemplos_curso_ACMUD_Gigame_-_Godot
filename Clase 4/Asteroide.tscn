@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://cm3er0bu2tprf"]
+
+[ext_resource type="Script" path="res://Clase 4/Proyectil.gd" id="1_i7t0t"]
+[ext_resource type="Texture2D" uid="uid://b60lo7eudid0q" path="res://Assets/Sprites/Propios/Asteroide.png" id="2_r7f4q"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0gwy0"]
+radius = 32.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_u7td5"]
+radius = 33.0151
+
+[node name="Asteroide" type="CharacterBody2D" groups=["Proyectil"]]
+motion_mode = 1
+script = ExtResource("1_i7t0t")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-1.90735e-06, -1.90735e-06)
+scale = Vector2(4, 4)
+texture = ExtResource("2_r7f4q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_0gwy0")
+
+[node name="Hitbox" type="Area2D" parent="."]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+shape = SubResource("CircleShape2D_u7td5")
+
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
