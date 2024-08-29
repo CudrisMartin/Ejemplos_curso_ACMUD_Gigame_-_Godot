@@ -1,10 +1,6 @@
 extends CharacterBody2D
 
-## Este Script corresponde a un nodo CharacterBody2D, que se comportará como una
-## Bola de fuego capaz de destruir el escenario.
-
-## Momentos importantes:
-## - Linea 41, eliminación de nodos.
+## Este Script corresponde a un nodo CharacterBody2D, que se comportará como un proyectil.
 
 # Variables de movimiento, ignorar hasta clase 6 - Fisica en Godot
 var direccion = Vector2.ZERO
