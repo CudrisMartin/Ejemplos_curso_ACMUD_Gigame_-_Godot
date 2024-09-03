@@ -1,13 +1,28 @@
-[gd_scene load_steps=9 format=3 uid="uid://cdvbac8r05ip1"]
+[gd_scene load_steps=24 format=3 uid="uid://cdvbac8r05ip1"]
 
 [ext_resource type="Theme" uid="uid://cae74lhnnqf7w" path="res://Recursos de Godot/Temas Clase 1.tres" id="1_hwrd2"]
-[ext_resource type="Theme" uid="uid://lsvn17lhspnm" path="res://Clase 2 - Programacion basica/Assests/Theme_Class_3.tres" id="2_cdoyp"]
+[ext_resource type="Script" path="res://Clase 2 - Programacion basica/programacion_basica.gd" id="1_iussn"]
+[ext_resource type="Theme" uid="uid://lsvn17lhspnm" path="res://Clase 2 - Programacion basica/Assests/Theme_Class_2.tres" id="2_cdoyp"]
 [ext_resource type="Texture2D" uid="uid://qx44h3v1is8r" path="res://Clase 2 - Programacion basica/Assests/plus.svg" id="2_fohuf"]
 [ext_resource type="Texture2D" uid="uid://catwmbcqbrky3" path="res://Clase 2 - Programacion basica/Assests/minus.svg" id="3_gqc21"]
 [ext_resource type="Texture2D" uid="uid://b8fimtymvr75y" path="res://Clase 2 - Programacion basica/Assests/x.svg" id="4_ak56k"]
 [ext_resource type="Texture2D" uid="uid://tturouue4ggw" path="res://Clase 2 - Programacion basica/Assests/divide.svg" id="5_bgpeh"]
 [ext_resource type="Texture2D" uid="uid://ckq26in7ikti4" path="res://Clase 2 - Programacion basica/Assests/percentage.svg" id="6_8k03h"]
 [ext_resource type="Texture2D" uid="uid://dd0dt3aan52yg" path="res://Clase 2 - Programacion basica/Assests/equal-equal.svg" id="8_6hrn7"]
+[ext_resource type="Texture2D" uid="uid://bpxebgwluurgi" path="res://Clase 2 - Programacion basica/Assests/math-greater.svg" id="9_5utgv"]
+[ext_resource type="Script" path="res://Clase 2 - Programacion basica/Operadores Basicos.gd" id="9_aq6pc"]
+[ext_resource type="Texture2D" uid="uid://bq2vfao1gitf0" path="res://Clase 2 - Programacion basica/Assests/math-lower.svg" id="10_al8ho"]
+[ext_resource type="Texture2D" uid="uid://ca6b46kgv6tp8" path="res://Clase 2 - Programacion basica/Assests/Diferente.svg" id="11_6ga5u"]
+[ext_resource type="Texture2D" uid="uid://g0xrdaqnskcm" path="res://Clase 2 - Programacion basica/Assests/math-equal-greater.svg" id="12_wqwjb"]
+[ext_resource type="Texture2D" uid="uid://ca2oi58jaramp" path="res://Clase 2 - Programacion basica/Assests/math-equal-lower.svg" id="13_tlay7"]
+[ext_resource type="Texture2D" uid="uid://bf7xaciu2eit1" path="res://Clase 2 - Programacion basica/Assests/And.svg" id="14_f2pvv"]
+[ext_resource type="Texture2D" uid="uid://bdy4v8kipno0r" path="res://Clase 2 - Programacion basica/Assests/lane.svg" id="15_c0w2a"]
+[ext_resource type="Script" path="res://Clase 2 - Programacion basica/Operadores Comparativos.gd" id="16_fineg"]
+[ext_resource type="Texture2D" uid="uid://dmmnt82xbp7fm" path="res://Clase 2 - Programacion basica/Assests/exclamation-mark.svg" id="16_me6y6"]
+[ext_resource type="Script" path="res://Clase 2 - Programacion basica/Operadores Logicos.gd" id="20_h0oum"]
+[ext_resource type="Script" path="res://Clase 2 - Programacion basica/label.gd" id="21_uf336"]
+[ext_resource type="Script" path="res://Clase 2 - Programacion basica/label_2.gd" id="22_ku5l0"]
+[ext_resource type="Script" path="res://Clase 2 - Programacion basica/label_3.gd" id="23_rb3f0"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -16,18 +31,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 1.0
 offset_right = 1.0
+offset_bottom = -448.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme = ExtResource("1_hwrd2")
-color = Color(0.556863, 0.792157, 0.901961, 1)
+script = ExtResource("1_iussn")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 1
@@ -50,17 +57,17 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -454.0
-offset_top = -68.0
-offset_right = 454.0
-offset_bottom = 68.0
+offset_left = -521.0
+offset_top = -100.0
+offset_right = 521.0
+offset_bottom = 100.0
 grow_horizontal = 2
 grow_vertical = 2
-metadata/_edit_use_anchors_ = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
-custom_minimum_size = Vector2(300, 80)
+custom_minimum_size = Vector2(300, 40)
 layout_mode = 2
+size_flags_vertical = 4
 
 [node name="LineEdit" type="LineEdit" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -77,25 +84,22 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="LineEdit4" type="LineEdit" parent="HBoxContainer/VBoxContainer"]
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
+custom_minimum_size = Vector2(300, 40)
 layout_mode = 2
-size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
-custom_minimum_size = Vector2(300, 0)
-layout_mode = 2
-
 [node name="OptionButton" type="OptionButton" parent="HBoxContainer/VBoxContainer2"]
-custom_minimum_size = Vector2(130, 33)
+custom_minimum_size = Vector2(185, 33)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme = ExtResource("2_cdoyp")
+selected = 0
+allow_reselect = true
 item_count = 5
 popup/item_0/text = "Suma"
 popup/item_0/icon = ExtResource("2_fohuf")
-popup/item_0/id = 0
 popup/item_1/text = "Resta"
 popup/item_1/icon = ExtResource("3_gqc21")
 popup/item_1/id = 1
@@ -108,42 +112,59 @@ popup/item_3/id = 3
 popup/item_4/text = "Mod."
 popup/item_4/icon = ExtResource("6_8k03h")
 popup/item_4/id = 4
+script = ExtResource("9_aq6pc")
 
 [node name="OptionButton2" type="OptionButton" parent="HBoxContainer/VBoxContainer2"]
-custom_minimum_size = Vector2(130, 33)
+custom_minimum_size = Vector2(185, 33)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+theme = ExtResource("2_cdoyp")
+selected = 0
+allow_reselect = true
 item_count = 6
 popup/item_0/text = "Igual "
 popup/item_0/icon = ExtResource("8_6hrn7")
-popup/item_0/id = 0
-popup/item_1/text = ""
+popup/item_1/text = "Mayor"
+popup/item_1/icon = ExtResource("9_5utgv")
 popup/item_1/id = 1
-popup/item_2/text = ""
+popup/item_2/text = "Menor"
+popup/item_2/icon = ExtResource("10_al8ho")
 popup/item_2/id = 2
-popup/item_3/text = ""
+popup/item_3/text = "Diferente"
+popup/item_3/icon = ExtResource("11_6ga5u")
 popup/item_3/id = 3
-popup/item_4/text = ""
+popup/item_4/text = "Mayor I."
+popup/item_4/icon = ExtResource("12_wqwjb")
 popup/item_4/id = 4
-popup/item_5/text = ""
+popup/item_5/text = "Menor I."
+popup/item_5/icon = ExtResource("13_tlay7")
 popup/item_5/id = 5
+script = ExtResource("16_fineg")
 
 [node name="OptionButton3" type="OptionButton" parent="HBoxContainer/VBoxContainer2"]
-custom_minimum_size = Vector2(130, 33)
+custom_minimum_size = Vector2(185, 33)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-
-[node name="OptionButton4" type="OptionButton" parent="HBoxContainer/VBoxContainer2"]
-custom_minimum_size = Vector2(130, 33)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
+theme = ExtResource("2_cdoyp")
+selected = 0
+allow_reselect = true
+item_count = 3
+popup/item_0/text = "And"
+popup/item_0/icon = ExtResource("14_f2pvv")
+popup/item_1/text = "Or"
+popup/item_1/icon = ExtResource("15_c0w2a")
+popup/item_1/id = 1
+popup/item_2/text = "Not"
+popup/item_2/icon = ExtResource("16_me6y6")
+popup/item_2/id = 2
+script = ExtResource("20_h0oum")
 
 [node name="VBoxContainer3" type="VBoxContainer" parent="HBoxContainer"]
-custom_minimum_size = Vector2(300, 0)
+custom_minimum_size = Vector2(300, 40)
 layout_mode = 2
+size_flags_vertical = 4
 
 [node name="LineEdit" type="LineEdit" parent="HBoxContainer/VBoxContainer3"]
 layout_mode = 2
@@ -157,21 +178,39 @@ size_flags_horizontal = 4
 layout_mode = 2
 size_flags_horizontal = 4
 
-[node name="LineEdit4" type="LineEdit" parent="HBoxContainer/VBoxContainer3"]
-layout_mode = 2
-size_flags_horizontal = 4
-
 [node name="VBoxContainer4" type="VBoxContainer" parent="HBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
+size_flags_vertical = 4
 
 [node name="Label" type="Label" parent="HBoxContainer/VBoxContainer4"]
+custom_minimum_size = Vector2(130, 33)
 layout_mode = 2
+theme = ExtResource("2_cdoyp")
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("21_uf336")
 
 [node name="Label2" type="Label" parent="HBoxContainer/VBoxContainer4"]
+custom_minimum_size = Vector2(130, 33)
 layout_mode = 2
+theme = ExtResource("2_cdoyp")
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("22_ku5l0")
 
 [node name="Label3" type="Label" parent="HBoxContainer/VBoxContainer4"]
+custom_minimum_size = Vector2(130, 33)
 layout_mode = 2
+theme = ExtResource("2_cdoyp")
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("23_rb3f0")
 
-[node name="Label4" type="Label" parent="HBoxContainer/VBoxContainer4"]
-layout_mode = 2
+[connection signal="text_submitted" from="HBoxContainer/VBoxContainer/LineEdit" to="HBoxContainer/VBoxContainer4/Label" method="_on_line_edit_text_submitted"]
+[connection signal="text_submitted" from="HBoxContainer/VBoxContainer/LineEdit2" to="HBoxContainer/VBoxContainer4/Label2" method="_on_line_edit_2_text_submitted"]
+[connection signal="text_submitted" from="HBoxContainer/VBoxContainer/LineEdit3" to="HBoxContainer/VBoxContainer4/Label3" method="_on_line_edit_3_text_submitted"]
+[connection signal="text_submitted" from="HBoxContainer/VBoxContainer3/LineEdit" to="." method="_on_line_edit_text_submitted"]
+[connection signal="text_submitted" from="HBoxContainer/VBoxContainer3/LineEdit" to="HBoxContainer/VBoxContainer4/Label" method="_on_line_edit_text_submitted"]
+[connection signal="text_submitted" from="HBoxContainer/VBoxContainer3/LineEdit2" to="HBoxContainer/VBoxContainer4/Label2" method="_on_line_edit_2_text_submitted"]
+[connection signal="text_submitted" from="HBoxContainer/VBoxContainer3/LineEdit3" to="HBoxContainer/VBoxContainer4/Label3" method="_on_line_edit_3_text_submitted"]

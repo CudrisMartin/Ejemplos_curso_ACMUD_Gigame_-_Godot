@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="30" height="17" viewBox="0 0 30 17" xml:space="preserve">
+<desc>Created with Fabric.js 3.6.6</desc>
+<defs>
+</defs>
+<g transform="matrix(1 0 0 1 14.5 9)"  >
+<g style=""   >
+		<g transform="matrix(1 0 0 1 -8.5 0)"  >
+<g style=""   >
+		<g transform="matrix(1 0 0 1 0 0)"  >
+<path style="stroke: none; stroke-width: 2; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;"  transform=" translate(-12, -12)" d="M 0 0 h 24 v 24 H 0 z" stroke-linecap="round" />
+</g>
+		<g transform="matrix(1 0 0 1 1 0)"  >
+<path style="stroke: rgb(0,0,0); stroke-width: 2; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;"  transform=" translate(-13, -12)" d="M 19 20 l -10.403 -10.972 a 2.948 2.948 0 0 1 0 -4.165 a 2.94 2.94 0 0 1 4.161 0 a 2.948 2.948 0 0 1 0 4.165 l -4.68 4.687 a 3.685 3.685 0 0 0 0 5.207 a 3.675 3.675 0 0 0 5.2 0 l 5.722 -5.922" stroke-linecap="round" />
+</g>
+</g>
+</g>
+		<g transform="matrix(1 0 0 1 8.5 0)"  >
+<g style="" vector-effect="non-scaling-stroke"   >
+		<g transform="matrix(1 0 0 1 0 0)"  >
+<path style="stroke: none; stroke-width: 2; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;"  transform=" translate(-12, -12)" d="M 0 0 h 24 v 24 H 0 z" stroke-linecap="round" />
+</g>
+		<g transform="matrix(1 0 0 1 1 0)"  >
+<path style="stroke: rgb(0,0,0); stroke-width: 2; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;"  transform=" translate(-13, -12)" d="M 19 20 l -10.403 -10.972 a 2.948 2.948 0 0 1 0 -4.165 a 2.94 2.94 0 0 1 4.161 0 a 2.948 2.948 0 0 1 0 4.165 l -4.68 4.687 a 3.685 3.685 0 0 0 0 5.207 a 3.675 3.675 0 0 0 5.2 0 l 5.722 -5.922" stroke-linecap="round" />
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
