@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Clase 6/Plataforma/Plataforma_movil.gd" id="1_37ak3"]
 [ext_resource type="Script" path="res://Clase 6/Plataforma/Jugador.gd" id="2_4tduv"]
-[ext_resource type="Texture2D" uid="uid://pdfylibt6x3j" path="res://Clase 6/Plataforma/Giganto.PNG" id="3_21ubk"]
+[ext_resource type="Texture2D" uid="uid://pdfylibt6x3j" path="res://Assets/Sprites/Propios/Giganto.PNG" id="3_21ubk"]
 [ext_resource type="Texture2D" uid="uid://vyhqgix3ixrb" path="res://icon.svg" id="4_mrjrk"]
 [ext_resource type="PackedScene" uid="uid://v3bbiesfht3u" path="res://Clase 6/Plataforma/Plataforma.tscn" id="5_2gsqj"]
 
