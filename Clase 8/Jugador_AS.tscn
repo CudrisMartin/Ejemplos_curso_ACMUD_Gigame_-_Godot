@@ -1,20 +1,18 @@
 [gd_scene load_steps=16 format=3 uid="uid://b083aqvagtqo3"]
 
 [ext_resource type="Script" path="res://Clase 8/Jugador_AS.gd" id="1_e8ins"]
-[ext_resource type="Texture2D" uid="uid://645gxn3ymwig" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/jump/player-jump-2.png" id="2_imklt"]
-[ext_resource type="Texture2D" uid="uid://cr0qmu3k6cm6e" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/idle/player-idle-1.png" id="3_hosio"]
-[ext_resource type="Texture2D" uid="uid://b5xxcldi7pmnl" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/idle/player-idle-2.png" id="4_hn4og"]
-[ext_resource type="Texture2D" uid="uid://dej0f4p52p2on" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/idle/player-idle-3.png" id="5_ven72"]
-[ext_resource type="Texture2D" uid="uid://cbm2s8ukg31df" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/idle/player-idle-4.png" id="6_vnoom"]
-[ext_resource type="Texture2D" uid="uid://0pbhg6egkdti" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/jump/player-jump-1.png" id="7_b3adc"]
-[ext_resource type="Texture2D" uid="uid://dn6nd5basl0sx" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/run/player-run-1.png" id="8_7jfc8"]
-[ext_resource type="Texture2D" uid="uid://c5vhvdfwww3gj" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/run/player-run-2.png" id="9_or4q8"]
-[ext_resource type="Texture2D" uid="uid://xf1nsbk75mjt" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/run/player-run-3.png" id="10_shwgb"]
-[ext_resource type="Texture2D" uid="uid://d2hj7li8qrlvy" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/run/player-run-4.png" id="11_88ro1"]
-[ext_resource type="Texture2D" uid="uid://8m53y87te553" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/run/player-run-5.png" id="12_vejvf"]
-[ext_resource type="Texture2D" uid="uid://d3r0dn7ygb85s" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/run/player-run-6.png" id="13_c12xa"]
-
-
+[ext_resource type="Texture2D" uid="uid://cukuo3eccet7l" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/jump/player-jump-2.png" id="2_imklt"]
+[ext_resource type="Texture2D" uid="uid://cimu0rhtx6uvj" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/idle/player-idle-1.png" id="3_hosio"]
+[ext_resource type="Texture2D" uid="uid://ditkm64ge0o5n" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/idle/player-idle-2.png" id="4_hn4og"]
+[ext_resource type="Texture2D" uid="uid://c30x4moaksobi" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/idle/player-idle-3.png" id="5_ven72"]
+[ext_resource type="Texture2D" uid="uid://byt773rtm422v" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/idle/player-idle-4.png" id="6_vnoom"]
+[ext_resource type="Texture2D" uid="uid://dwm0x6ksdxkwx" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/jump/player-jump-1.png" id="7_b3adc"]
+[ext_resource type="Texture2D" uid="uid://cs0qj2sybumua" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/run/player-run-1.png" id="8_7jfc8"]
+[ext_resource type="Texture2D" uid="uid://jssw3qwnc0tg" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/run/player-run-2.png" id="9_or4q8"]
+[ext_resource type="Texture2D" uid="uid://2nl807pxmrgw" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/run/player-run-3.png" id="10_shwgb"]
+[ext_resource type="Texture2D" uid="uid://6rnxbjdcwfpl" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/run/player-run-4.png" id="11_88ro1"]
+[ext_resource type="Texture2D" uid="uid://d0qdyw24gbjrg" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/run/player-run-5.png" id="12_vejvf"]
+[ext_resource type="Texture2D" uid="uid://c5m0mv06iq6fh" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/run/player-run-6.png" id="13_c12xa"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_equfc"]
 radius = 8.0

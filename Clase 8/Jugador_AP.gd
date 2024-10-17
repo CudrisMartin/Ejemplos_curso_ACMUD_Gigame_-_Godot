@@ -2,7 +2,6 @@ extends CharacterBody2D
 
 ## Script que maneja el jugador que maneja sus animaciones con un AnimationPlayer.
 
-@onready var controlador = $"../CanvasLayer/Control"  # Ruta al nodo controlador
 
 
 var SPEED = 400.0
@@ -18,11 +17,9 @@ func _process(delta):
 		$AnimationPlayer.play("Attack")
 
 func _physics_process(delta):
-	var SPEED = controlador.get_caracteristica1()
-	var JUMP_VELOCITY =  -600
 
 	if not is_on_floor():
-		velocity.y += gravity * delta * (controlador.get_caracteristica3())
+		velocity.y += gravity * delta
 
 		## Dependiendo de la velocidad de caida, reproduce animación de caida o salto. 
 	if velocity.y > 0:
@@ -31,7 +28,7 @@ func _physics_process(delta):
 		$AnimationPlayer.play("jump")
 
 	## Si se presiona la tecla de salto, reproduce animación de salto. 
-	if Input.is_action_just_pressed("ui_up") and (is_on_floor() || controlador.get_caracteristica2()) :
+	if Input.is_action_just_pressed("ui_up") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 		$AnimationPlayer.play("jump")
 
