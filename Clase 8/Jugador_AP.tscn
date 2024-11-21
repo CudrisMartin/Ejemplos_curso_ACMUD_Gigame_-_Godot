@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://cndi16o0tuaj8"]
 
 [ext_resource type="Script" path="res://Clase 8/Jugador_AP.gd" id="1_1x8lq"]
-[ext_resource type="Texture2D" uid="uid://dopjf8vkrui2f" path="res://Assets/Sprites/Adventurer/adventurer-Sheet.png" id="2_hf0q7"]
+[ext_resource type="Texture2D" uid="uid://dsmcbx7isvpjv" path="res://Assets/Sprites/Adventurer/adventurer-Sheet.png" id="2_hf0q7"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nt8lm"]
 radius = 8.0
