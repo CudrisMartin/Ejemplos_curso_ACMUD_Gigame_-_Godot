@@ -1,12 +1,10 @@
 [gd_scene load_steps=13 format=3 uid="uid://cgswqosq1xyd1"]
 
-[ext_resource type="Script" path="res://Clase 7/Areas.gd" id="1_4rou2"]
+[ext_resource type="Script" uid="uid://dnfflj51nbk58" path="res://Clase 7/Areas.gd" id="1_4rou2"]
 [ext_resource type="Texture2D" uid="uid://vyhqgix3ixrb" path="res://icon.svg" id="2_nnmpj"]
-[ext_resource type="Script" path="res://Clase 7/Jugador.gd" id="3_7uor0"]
-[ext_resource type="Texture2D" uid="uid://owei0ip0ern4" path="res://Assets/Sprites/Pixel Adventure 2/Enemies/Turtle/Hit (44x26).png" id="3_w17hr"]
-[ext_resource type="Texture2D" uid="uid://cr0qmu3k6cm6e" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/idle/player-idle-1.png" id="4_3xsrh"]
-
-
+[ext_resource type="Script" uid="uid://diql3bqwevcow" path="res://Clase 7/Jugador.gd" id="3_7uor0"]
+[ext_resource type="Texture2D" uid="uid://cd0bwyo28u2p5" path="res://Assets Generales/Sprites/Pixel Adventure 2/Enemies/Turtle/Hit (44x26).png" id="3_w17hr"]
+[ext_resource type="Texture2D" uid="uid://cn4j7qkg18xm" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/idle/player-idle-1.png" id="4_3xsrh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e1uc7"]
 size = Vector2(128, 648)

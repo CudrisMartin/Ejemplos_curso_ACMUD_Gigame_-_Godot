@@ -1,11 +1,11 @@
 [gd_scene load_steps=16 format=3 uid="uid://dqc5cvuaaltaj"]
 
-[ext_resource type="Script" path="res://Clase 8/Jugador_AP.gd" id="2_5aug1"]
-[ext_resource type="Texture2D" uid="uid://dopjf8vkrui2f" path="res://Assets/Sprites/Adventurer/adventurer-Sheet.png" id="3_eyt4x"]
+[ext_resource type="Script" uid="uid://b5jyrq1h4e8xe" path="res://Clase 8/Jugador_AP.gd" id="2_5aug1"]
+[ext_resource type="Texture2D" uid="uid://dopjf8vkrui2f" path="res://Assets Generales/Sprites/Adventurer/adventurer-Sheet.png" id="3_eyt4x"]
 [ext_resource type="PackedScene" uid="uid://b083aqvagtqo3" path="res://Clase 8/Jugador_AS.tscn" id="4_87muk"]
-[ext_resource type="Texture2D" uid="uid://6i7lu67kqyrg" path="res://Assets/Sprites/Pixel Adventure 1/Free/Items/Boxes/Box2/Idle.png" id="5_gsor4"]
+[ext_resource type="Texture2D" uid="uid://6i7lu67kqyrg" path="res://Assets Generales/Sprites/Pixel Adventure 1/Free/Items/Boxes/Box2/Idle.png" id="5_gsor4"]
 [ext_resource type="TileSet" uid="uid://cbtuj76ux3b66" path="res://Recursos de Godot/Tileset_creado.tres" id="6_fmsvk"]
-[ext_resource type="Script" path="res://Clase 8/Detectar_Clicks.gd" id="6_y78ya"]
+[ext_resource type="Script" uid="uid://d2bs5cxli1y4s" path="res://Clase 8/Detectar_Clicks.gd" id="6_y78ya"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_equfc"]
 radius = 8.0
@@ -104,11 +104,11 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_v0atw"]
 _data = {
-"Attack": SubResource("Animation_3xirb"),
-"fall": SubResource("Animation_nuvkr"),
-"idle": SubResource("Animation_tsx5c"),
-"jump": SubResource("Animation_pwb8h"),
-"run": SubResource("Animation_cc4jh")
+&"Attack": SubResource("Animation_3xirb"),
+&"fall": SubResource("Animation_nuvkr"),
+&"idle": SubResource("Animation_tsx5c"),
+&"jump": SubResource("Animation_pwb8h"),
+&"run": SubResource("Animation_cc4jh")
 }
 
 [sub_resource type="Animation" id="Animation_0bcp6"]
@@ -129,7 +129,7 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_nskfo"]
 _data = {
-"tambaleo": SubResource("Animation_0bcp6")
+&"tambaleo": SubResource("Animation_0bcp6")
 }
 
 [node name="Node2D" type="Node2D"]

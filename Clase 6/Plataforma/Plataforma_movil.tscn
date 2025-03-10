@@ -1,8 +1,8 @@
 [gd_scene load_steps=10 format=3 uid="uid://cb7skjf16etv2"]
 
-[ext_resource type="Script" path="res://Clase 6/Plataforma/Plataforma_movil.gd" id="1_37ak3"]
-[ext_resource type="Script" path="res://Clase 6/Plataforma/Jugador.gd" id="2_4tduv"]
-[ext_resource type="Texture2D" uid="uid://pdfylibt6x3j" path="res://Assets/Sprites/Propios/Giganto.PNG" id="3_21ubk"]
+[ext_resource type="Script" uid="uid://kapnpeh2tha" path="res://Clase 6/Plataforma/Plataforma_movil.gd" id="1_37ak3"]
+[ext_resource type="Script" uid="uid://dja5mg0krvgy0" path="res://Clase 6/Plataforma/Jugador.gd" id="2_4tduv"]
+[ext_resource type="Texture2D" uid="uid://pdfylibt6x3j" path="res://Assets Generales/Sprites/Propios/Giganto.PNG" id="3_21ubk"]
 [ext_resource type="Texture2D" uid="uid://vyhqgix3ixrb" path="res://icon.svg" id="4_mrjrk"]
 [ext_resource type="PackedScene" uid="uid://v3bbiesfht3u" path="res://Clase 6/Plataforma/Plataforma.tscn" id="5_2gsqj"]
 

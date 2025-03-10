@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cuxma2uf6rt5u"]
 
-[ext_resource type="Texture2D" uid="uid://d2lpg6pwsa1w1" path="res://Assets/Sprites/Pixel Adventure 1/Free/Traps/Falling Platforms/Off.png" id="1_25m8f"]
+[ext_resource type="Texture2D" uid="uid://bp3o4mmj56lkp" path="res://Assets Generales/Sprites/Pixel Adventure 1/Free/Traps/Falling Platforms/Off.png" id="1_25m8f"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_tp30c"]
 

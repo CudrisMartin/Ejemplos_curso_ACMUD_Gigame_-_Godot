@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bkt7vcsevxrcl"]
 
-[ext_resource type="Script" path="res://Clase 4/Proyectil.gd" id="1_dfi85"]
-[ext_resource type="Texture2D" uid="uid://cvd53hnnitema" path="res://Assets/Sprites/Propios/Bola_de_Fuego.png" id="1_gaxgw"]
+[ext_resource type="Script" uid="uid://sw5xm8ns8jvt" path="res://Clase 4/Proyectil.gd" id="1_dfi85"]
+[ext_resource type="Texture2D" uid="uid://dtqugg5akcqim" path="res://Assets Generales/Sprites/Propios/Bola_de_Fuego.png" id="1_gaxgw"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_0gwy0"]
 radius = 14.0

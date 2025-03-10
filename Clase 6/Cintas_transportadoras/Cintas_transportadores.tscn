@@ -1,9 +1,9 @@
 [gd_scene load_steps=11 format=3 uid="uid://b057lgu3hawel"]
 
 [ext_resource type="PackedScene" uid="uid://cuxma2uf6rt5u" path="res://Clase 6/Cintas_transportadoras/Cinta.tscn" id="1_a5o3j"]
-[ext_resource type="Texture2D" uid="uid://cqicat8131rot" path="res://Assets/Sprites/Pixel Adventure 1/Free/Background/Gray.png" id="1_ptbvl"]
+[ext_resource type="Texture2D" uid="uid://cyjam8587qr4h" path="res://Assets Generales/Sprites/Pixel Adventure 1/Free/Background/Gray.png" id="1_ptbvl"]
 [ext_resource type="Theme" uid="uid://cae74lhnnqf7w" path="res://Recursos de Godot/Temas Clase 1.tres" id="1_vhs8n"]
-[ext_resource type="Texture2D" uid="uid://bxk2a275cqdcs" path="res://Assets/Sprites/Propios/Godot plush.png" id="2_glj3f"]
+[ext_resource type="Texture2D" uid="uid://dmi608wj6mj6u" path="res://Assets Generales/Sprites/Propios/Godot plush.png" id="2_glj3f"]
 [ext_resource type="PackedScene" uid="uid://bdo53gdf76tio" path="res://Clase 6/Cintas_transportadoras/Rueda.tscn" id="3_4n52q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bmkg6"]

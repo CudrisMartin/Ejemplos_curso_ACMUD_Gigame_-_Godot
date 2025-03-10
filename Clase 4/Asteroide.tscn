@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cm3er0bu2tprf"]
 
-[ext_resource type="Script" path="res://Clase 4/Proyectil.gd" id="1_i7t0t"]
-[ext_resource type="Texture2D" uid="uid://b60lo7eudid0q" path="res://Assets/Sprites/Propios/Asteroide.png" id="2_r7f4q"]
+[ext_resource type="Script" uid="uid://sw5xm8ns8jvt" path="res://Clase 4/Proyectil.gd" id="1_i7t0t"]
+[ext_resource type="Texture2D" uid="uid://bbknksopg5i27" path="res://Assets Generales/Sprites/Propios/Asteroide.png" id="2_r7f4q"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_0gwy0"]
 radius = 32.0

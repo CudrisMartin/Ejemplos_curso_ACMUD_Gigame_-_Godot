@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://ctaxhds0l8bve"]
 
-[ext_resource type="Script" path="res://Clase 4/Mundo.gd" id="1_xftkk"]
+[ext_resource type="Script" uid="uid://cmoqqe60v6qnt" path="res://Clase 4/Mundo.gd" id="1_xftkk"]
 [ext_resource type="PackedScene" uid="uid://c4of220fr717m" path="res://Clase 4/Nave.tscn" id="2_4aab8"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_1awes"]

@@ -1,15 +1,15 @@
 [gd_scene load_steps=23 format=4 uid="uid://bntd5bovgrwp7"]
 
-[ext_resource type="Script" path="res://Clase 1 - Introduccionn/Clase 1.gd" id="1_qisws"]
+[ext_resource type="Script" uid="uid://owadae5ooeld" path="res://Clase 1 - Introduccionn/Clase 1.gd" id="1_qisws"]
 [ext_resource type="Theme" uid="uid://cae74lhnnqf7w" path="res://Recursos de Godot/Temas Clase 1.tres" id="2_e2fvw"]
 [ext_resource type="TileSet" uid="uid://cbtuj76ux3b66" path="res://Recursos de Godot/Tileset_creado.tres" id="2_oj1fa"]
-[ext_resource type="Texture2D" uid="uid://cn7bvnifiniw8" path="res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/environment/layers/back.png" id="3_oiqui"]
+[ext_resource type="Texture2D" uid="uid://cn7bvnifiniw8" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/environment/layers/back.png" id="3_oiqui"]
 [ext_resource type="PackedScene" uid="uid://cndi16o0tuaj8" path="res://Clase 8/Jugador_AP.tscn" id="4_cyasb"]
 [ext_resource type="Texture2D" uid="uid://vyhqgix3ixrb" path="res://icon.svg" id="6_5fk7m"]
 [ext_resource type="PackedScene" uid="uid://cxnit1wuxsumx" path="res://Clase 1 - Introduccionn/GodotPlush.tscn" id="7_hkhas"]
-[ext_resource type="Texture2D" uid="uid://dpl8l6c77ddid" path="res://Assets/Sprites/Propios/Logos GiGame/ACM-GiGame.png" id="7_rdkef"]
+[ext_resource type="Texture2D" uid="uid://dpl8l6c77ddid" path="res://Assets Generales/Sprites/Propios/Logos GiGame/ACM-GiGame.png" id="7_rdkef"]
 [ext_resource type="PackedScene" uid="uid://v3bbiesfht3u" path="res://Clase 6/Plataforma/Plataforma.tscn" id="8_cdcoc"]
-[ext_resource type="Texture2D" uid="uid://b0sihiu37b3o3" path="res://Assets/Sprites/mystic_woods_free_2.1/sprites/characters/slime.png" id="9_pnf3i"]
+[ext_resource type="Texture2D" uid="uid://b0sihiu37b3o3" path="res://Assets Generales/Sprites/mystic_woods_free_2.1/sprites/characters/slime.png" id="9_pnf3i"]
 
 [sub_resource type="Curve2D" id="Curve2D_scjhi"]
 _data = {
@@ -107,7 +107,7 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_eqyxv"]
 _data = {
-"Slime_walk": SubResource("Animation_sbgby")
+&"Slime_walk": SubResource("Animation_sbgby")
 }
 
 [node name="Clase 1" type="Node"]
@@ -300,7 +300,7 @@ frame_progress = 0.231338
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Mundo"]
 libraries = {
-"": SubResource("AnimationLibrary_eqyxv")
+&"": SubResource("AnimationLibrary_eqyxv")
 }
 autoplay = "Slime_walk"
 
