@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://s66kdx4v3tmt"]
+[gd_scene load_steps=6 format=3 uid="uid://s66kdx4v3tmt"]
 
 [ext_resource type="Script" uid="uid://hg2cf37hnsyw" path="res://Clase 2 - Programacion en GDScript/Clase 3 - POO.gd" id="1_6vn77"]
 [ext_resource type="PackedScene" uid="uid://dn2aqn4sxj0r2" path="res://Clase 2 - Programacion en GDScript/Carro.tscn" id="2_a1ap8"]
 [ext_resource type="PackedScene" uid="uid://de8tcfo8va1rm" path="res://Clase 2 - Programacion en GDScript/InterfazClase2.tscn" id="2_s7j8c"]
+[ext_resource type="Theme" uid="uid://bnoxaja50squm" path="res://Assets Generales/Themes/GUI general.tres" id="4_u3b6i"]
 
 [sub_resource type="Curve2D" id="Curve2D_b4fdd"]
 _data = {
@@ -14,6 +15,7 @@ point_count = 5
 script = ExtResource("1_6vn77")
 InsCarro = ExtResource("2_a1ap8")
 metadata/_edit_vertical_guides_ = [576.0]
+metadata/_edit_horizontal_guides_ = [647.0]
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 5.0
@@ -28,7 +30,100 @@ color = Color(0.364706, 0.231373, 0.258824, 1)
 [node name="Path2D" type="Path2D" parent="."]
 curve = SubResource("Curve2D_b4fdd")
 
+[node name="CarroImp" parent="Path2D" instance=ExtResource("2_a1ap8")]
+position = Vector2(1024, 64)
+rotation = 3.14159
+
+[node name="Camera2D" type="Camera2D" parent="Path2D/CarroImp"]
+rotation = 3.14159
+zoom = Vector2(5, 5)
+
 [node name="GUI" type="CanvasLayer" parent="."]
+
+[node name="InfoCarro" type="PanelContainer" parent="GUI"]
+offset_left = 106.0
+offset_top = 237.0
+offset_right = 412.0
+offset_bottom = 441.0
+size_flags_vertical = 4
+theme = ExtResource("4_u3b6i")
+
+[node name="MarginContainer" type="MarginContainer" parent="GUI/InfoCarro"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GUI/InfoCarro/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="CampoMarca" type="MarginContainer" parent="GUI/InfoCarro/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_right = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GUI/InfoCarro/MarginContainer/VBoxContainer/CampoMarca"]
+layout_mode = 2
+
+[node name="titlMarca" type="Label" parent="GUI/InfoCarro/MarginContainer/VBoxContainer/CampoMarca/HBoxContainer"]
+custom_minimum_size = Vector2(142, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "Marca"
+
+[node name="txtMarca" type="Label" parent="GUI/InfoCarro/MarginContainer/VBoxContainer/CampoMarca/HBoxContainer"]
+custom_minimum_size = Vector2(142, 0)
+layout_mode = 2
+
+[node name="CampoPlaca" type="MarginContainer" parent="GUI/InfoCarro/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_right = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GUI/InfoCarro/MarginContainer/VBoxContainer/CampoPlaca"]
+layout_mode = 2
+
+[node name="titlPlaca" type="Label" parent="GUI/InfoCarro/MarginContainer/VBoxContainer/CampoPlaca/HBoxContainer"]
+custom_minimum_size = Vector2(142, 0)
+layout_mode = 2
+text = "Placa"
+
+[node name="txtPlaca" type="Label" parent="GUI/InfoCarro/MarginContainer/VBoxContainer/CampoPlaca/HBoxContainer"]
+custom_minimum_size = Vector2(142, 0)
+layout_mode = 2
+
+[node name="CampoVelocidad" type="MarginContainer" parent="GUI/InfoCarro/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_right = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GUI/InfoCarro/MarginContainer/VBoxContainer/CampoVelocidad"]
+layout_mode = 2
+
+[node name="titlVelocidad" type="Label" parent="GUI/InfoCarro/MarginContainer/VBoxContainer/CampoVelocidad/HBoxContainer"]
+custom_minimum_size = Vector2(142, 0)
+layout_mode = 2
+text = "Velocidad"
+
+[node name="txtVelocidad" type="Label" parent="GUI/InfoCarro/MarginContainer/VBoxContainer/CampoVelocidad/HBoxContainer"]
+custom_minimum_size = Vector2(142, 0)
+layout_mode = 2
+
+[node name="CampoColor" type="MarginContainer" parent="GUI/InfoCarro/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_right = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GUI/InfoCarro/MarginContainer/VBoxContainer/CampoColor"]
+layout_mode = 2
+
+[node name="titlColor" type="Label" parent="GUI/InfoCarro/MarginContainer/VBoxContainer/CampoColor/HBoxContainer"]
+custom_minimum_size = Vector2(142, 0)
+layout_mode = 2
+text = "Color"
+
+[node name="txtColor" type="Label" parent="GUI/InfoCarro/MarginContainer/VBoxContainer/CampoColor/HBoxContainer"]
+custom_minimum_size = Vector2(142, 0)
+layout_mode = 2
 
 [node name="InterfazClase2" parent="GUI" instance=ExtResource("2_s7j8c")]
 

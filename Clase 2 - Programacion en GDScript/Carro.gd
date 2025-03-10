@@ -12,7 +12,7 @@ static var Marcas = {
 var marca : int
 
 ## Atributo publico con metodo set y get.
-var velocidad: int:
+var velocidad: int =  500 : 
 	set(v): # Establece que la velocidad debe estar entre 100 y 900.
 		velocidad = clamp(v,100,900)
 	get: # Simplemente devuelve el valor de la variable.
