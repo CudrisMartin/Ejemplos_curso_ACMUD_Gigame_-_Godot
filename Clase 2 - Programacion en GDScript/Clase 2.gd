@@ -7,6 +7,9 @@ extends Node2D
 
 var carros : Dictionary[String, Carro]
 
+func _ready() -> void:
+	InfoCarros.Regresar.pressed.connect(regresar_vista_normal)
+
 func anadir_nuevo_carro(placa : String, marca : int, velocidad : float, color : Color):
 	var c : Carro = InsCarro.instantiate()
 	c.color = color
@@ -25,4 +28,10 @@ func _on_interfaz_clase_2_carro_seleccionado(placa: String) -> void:
 	Interfaz.hide()
 	InfoCarros.show()
 	InfoCarros.mostrar_info(carros[placa])
-	
+
+func regresar_vista_normal():
+	Camara.get_parent().remove_child(Camara)
+	add_child(Camara)
+	Camara.enabled = false
+	Interfaz.show()
+	InfoCarros.hide()

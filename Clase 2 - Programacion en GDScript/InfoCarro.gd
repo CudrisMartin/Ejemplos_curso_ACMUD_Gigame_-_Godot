@@ -4,6 +4,7 @@ extends PanelContainer
 @export var Marca : Label
 @export var Velocidad : Label
 @export var color : Label
+@export var Regresar : Button
 
 func mostrar_info(c : Carro):
 	
@@ -12,3 +13,4 @@ func mostrar_info(c : Carro):
 	self.Velocidad.text = str(c.velocidad)
 	self.color.add_theme_color_override("font_color",c.color)
 	self.color.text = "#" + c.color.to_html(false)
+	
