@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://s66kdx4v3tmt"]
 
-[ext_resource type="Script" uid="uid://hg2cf37hnsyw" path="res://Clase 2 - Programacion en GDScript/Clase 2.gd" id="1_r01cf"]
-[ext_resource type="PackedScene" uid="uid://dn2aqn4sxj0r2" path="res://Clase 2 - Programacion en GDScript/Carro.tscn" id="2_66vq6"]
-[ext_resource type="PackedScene" uid="uid://bwj028so425kr" path="res://Clase 2 - Programacion en GDScript/InfoCarro.tscn" id="3_sudc2"]
-[ext_resource type="PackedScene" uid="uid://de8tcfo8va1rm" path="res://Clase 2 - Programacion en GDScript/InterfazClase2.tscn" id="4_85sy5"]
+[ext_resource type="Script" uid="uid://hg2cf37hnsyw" path="res://Clase 2 y 3 -- Prog en GDScript - Nodos/Clase 2.gd" id="1_r01cf"]
+[ext_resource type="PackedScene" uid="uid://dn2aqn4sxj0r2" path="res://Clase 2 y 3 -- Prog en GDScript - Nodos/Carro.tscn" id="2_66vq6"]
+[ext_resource type="PackedScene" uid="uid://bwj028so425kr" path="res://Clase 2 y 3 -- Prog en GDScript - Nodos/InfoCarro.tscn" id="3_sudc2"]
+[ext_resource type="PackedScene" uid="uid://de8tcfo8va1rm" path="res://Clase 2 y 3 -- Prog en GDScript - Nodos/InterfazClase2.tscn" id="4_85sy5"]
 
 [sub_resource type="Curve2D" id="Curve2D_b4fdd"]
 _data = {

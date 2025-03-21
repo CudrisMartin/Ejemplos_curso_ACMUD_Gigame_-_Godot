@@ -1,7 +1,8 @@
 [gd_scene load_steps=3 format=3 uid="uid://bwj028so425kr"]
 
 [ext_resource type="Theme" uid="uid://bnoxaja50squm" path="res://Assets Generales/Themes/GUI general.tres" id="1_lnev2"]
-[ext_resource type="Script" uid="uid://bssw0bktytb0l" path="res://Clase 2 - Programacion en GDScript/InfoCarro.gd" id="2_hq4kt"]
+[ext_resource type="Script" uid="uid://bssw0bktytb0l" path="res://Clase 2 y 3 -- Prog en GDScript - Nodos/InfoCarro.gd" id="2_hq4kt"]
+
 
 [node name="InfoCarro" type="PanelContainer" node_paths=PackedStringArray("Placa", "Marca", "Velocidad", "color", "Regresar")]
 anchors_preset = 8
