@@ -1,74 +1,20 @@
-[gd_scene load_steps=44 format=4 uid="uid://b5j4afeorfcit"]
+[gd_scene load_steps=45 format=4 uid="uid://b5j4afeorfcit"]
 
-[ext_resource type="Texture2D" uid="uid://dae7rfl16lva6" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/environment/layers/back.png" id="1_rjdnl"]
-[ext_resource type="Texture2D" uid="uid://bls8e08wmexea" path="res://Assets Generales/Sprites/Adventurer/adventurer-Sheet.png" id="3_eyt4x"]
-[ext_resource type="Texture2D" uid="uid://b7xux41xnqceh" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-1.png" id="4_x6tba"]
-[ext_resource type="Texture2D" uid="uid://tlpgyry8p422" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-2.png" id="5_bhxwr"]
+[ext_resource type="Script" uid="uid://ngynaqxy7cs4" path="res://Clase 5 - Sprites y animaciones/Animaciones.gd" id="1_bhxwr"]
+[ext_resource type="Texture2D" uid="uid://cn7bvnifiniw8" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/environment/layers/back.png" id="1_rjdnl"]
+[ext_resource type="Texture2D" uid="uid://dopjf8vkrui2f" path="res://Assets Generales/Sprites/Adventurer/adventurer-Sheet.png" id="3_eyt4x"]
+[ext_resource type="Texture2D" uid="uid://crnfxs0qydv0x" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-1.png" id="4_x6tba"]
+[ext_resource type="Texture2D" uid="uid://c72duype5o5p5" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-2.png" id="5_bhxwr"]
 [ext_resource type="TileSet" uid="uid://cbtuj76ux3b66" path="res://Recursos de Godot/Tileset_creado.tres" id="6_fmsvk"]
-[ext_resource type="Texture2D" uid="uid://d4h5rchpiwksq" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-3.png" id="6_icbdi"]
-[ext_resource type="Texture2D" uid="uid://dfmvt47ejicxl" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-4.png" id="7_kmvjo"]
-[ext_resource type="Texture2D" uid="uid://dw5lwh46p2tdt" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-5.png" id="8_schms"]
-[ext_resource type="Texture2D" uid="uid://t0iv2jaxanno" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-6.png" id="9_ueev1"]
-[ext_resource type="Texture2D" uid="uid://bfdrvt1i6ojux" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eagle/eagle-attack-1.png" id="10_ey5k1"]
-[ext_resource type="Texture2D" uid="uid://d0egev7vu81wg" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eagle/eagle-attack-2.png" id="11_eoe1t"]
-[ext_resource type="Texture2D" uid="uid://7gc2dv2fplf8" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eagle/eagle-attack-3.png" id="12_dfixm"]
-[ext_resource type="Texture2D" uid="uid://c84ocxjtoiagg" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eagle/eagle-attack-4.png" id="13_8cb1b"]
+[ext_resource type="Texture2D" uid="uid://kyxu74cq6uuc" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-3.png" id="6_icbdi"]
+[ext_resource type="Texture2D" uid="uid://gqnhtn1oyy3l" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-4.png" id="7_kmvjo"]
+[ext_resource type="Texture2D" uid="uid://dy058h7w1exd2" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-5.png" id="8_schms"]
+[ext_resource type="Texture2D" uid="uid://cug3rw0a5nfyq" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-6.png" id="9_ueev1"]
+[ext_resource type="Texture2D" uid="uid://d3j3divevgxmd" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eagle/eagle-attack-1.png" id="10_ey5k1"]
+[ext_resource type="Texture2D" uid="uid://co2excv7n631g" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eagle/eagle-attack-2.png" id="11_eoe1t"]
+[ext_resource type="Texture2D" uid="uid://cbggm02lvpiej" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eagle/eagle-attack-3.png" id="12_dfixm"]
+[ext_resource type="Texture2D" uid="uid://ctgh8cexgyadt" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eagle/eagle-attack-4.png" id="13_8cb1b"]
 [ext_resource type="Theme" uid="uid://bnoxaja50squm" path="res://Assets Generales/Themes/GUI general.tres" id="14_1rajn"]
-
-[sub_resource type="Animation" id="Animation_e8bdd"]
-resource_name = "Preparacion"
-length = 3.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("GUI/RichTextLabel:text")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1, 2, 2.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": ["[color=white]¿Preparados?[/color]", "[color=yellow]¿Listos?[/color]", "[color=red]¡¡¡ATACA!!![/color]", ""]
-}
-
-[sub_resource type="Animation" id="Animation_r4odb"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("GUI/RichTextLabel:text")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": ["Prueba"]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Jugador:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(230, 344)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Enemigo:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(920, 329)]
-}
 
 [sub_resource type="Animation" id="Animation_onpgk"]
 resource_name = "Ataque"
@@ -131,7 +77,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("GUI/RichTextLabel:text")
+tracks/1/path = NodePath("GUI/Señales:text")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -139,6 +85,130 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": ["[color=red][shake rate=20.0 level=5 connected=1]Perdiste[/shake][/color]"]
+}
+
+[sub_resource type="Animation" id="Animation_e8bdd"]
+resource_name = "Preparacion"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GUI/Señales:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2, 2.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": ["[color=white]¿Preparados?[/color]", "[color=yellow]¿Listos?[/color]", "[color=red]¡¡¡ATACA!!![/color]", ""]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(2, 2.5),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [true],
+"method": &"recibir_input"
+}, {
+"args": [false],
+"method": &"recibir_input"
+}]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Jugador")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"idle"],
+"method": &"play"
+}]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Enemigo")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"idle"],
+"method": &"play"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_r4odb"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GUI/Señales:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["Prueba"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Jugador:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(230, 344)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Enemigo:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(920, 329)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Jugador:animation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"idle"]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Enemigo:animation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"idle"]
 }
 
 [sub_resource type="Animation" id="Animation_bhxwr"]
@@ -160,7 +230,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("GUI/RichTextLabel:text")
+tracks/1/path = NodePath("GUI/Señales:text")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -288,7 +358,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"attack",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -360,7 +430,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"victory",
-"speed": 5.0
+"speed": 10.0
 }]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_bh7qf"]
@@ -410,6 +480,7 @@ animations = [{
 }]
 
 [node name="Animaciones" type="Node2D"]
+script = ExtResource("1_bhxwr")
 metadata/_edit_horizontal_guides_ = [344.0]
 metadata/_edit_vertical_guides_ = [230.0, 460.0, 690.0, 920.0]
 
@@ -417,7 +488,7 @@ metadata/_edit_vertical_guides_ = [230.0, 460.0, 690.0, 920.0]
 libraries = {
 &"": SubResource("AnimationLibrary_mx0n1")
 }
-autoplay = "Victoria"
+autoplay = "Preparacion"
 
 [node name="Back" type="Sprite2D" parent="."]
 position = Vector2(576, 360)
@@ -432,27 +503,28 @@ tile_set = ExtResource("6_fmsvk")
 position = Vector2(230, 344)
 scale = Vector2(5, 5)
 sprite_frames = SubResource("SpriteFrames_ldjun")
-animation = &"attack"
+animation = &"idle"
+frame_progress = 0.626521
 
 [node name="Enemigo" type="AnimatedSprite2D" parent="."]
 position = Vector2(920, 329)
 scale = Vector2(5, 5)
 sprite_frames = SubResource("SpriteFrames_bh7qf")
 animation = &"idle"
-frame_progress = 0.817299
+autoplay = "idle"
 
 [node name="GUI" type="CanvasLayer" parent="."]
 
-[node name="RichTextLabel" type="RichTextLabel" parent="GUI"]
+[node name="Señales" type="RichTextLabel" parent="GUI"]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -576.0
-offset_top = -97.5
+offset_top = -324.0
 offset_right = 576.0
-offset_bottom = 97.5
+offset_bottom = -129.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("14_1rajn")
@@ -465,5 +537,13 @@ fit_content = true
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="AnimationTree" type="AnimationTree" parent="."]
-anim_player = NodePath("../AnimationPlayer")
+[node name="RichTextLabel" type="RichTextLabel" parent="GUI"]
+offset_top = 582.0
+offset_right = 920.0
+offset_bottom = 648.0
+theme = ExtResource("14_1rajn")
+theme_override_constants/outline_size = 8
+text = "Presiona [ESPACIO] en el momento justo para atacar.
+Presiona [Esc] para reiniciar."
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
