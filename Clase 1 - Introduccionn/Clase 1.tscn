@@ -3,18 +3,17 @@
 [ext_resource type="Script" uid="uid://owadae5ooeld" path="res://Clase 1 - Introduccionn/Clase 1.gd" id="1_qisws"]
 [ext_resource type="Theme" uid="uid://cae74lhnnqf7w" path="res://Recursos de Godot/Temas Clase 1.tres" id="2_e2fvw"]
 [ext_resource type="TileSet" uid="uid://cbtuj76ux3b66" path="res://Recursos de Godot/Tileset_creado.tres" id="2_oj1fa"]
-[ext_resource type="Texture2D" uid="uid://dae7rfl16lva6" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/environment/layers/back.png" id="3_oiqui"]
-[ext_resource type="PackedScene" uid="uid://cndi16o0tuaj8" path="res://Clase 5 - Sprites y animaciones/Jugador_AP.tscn" id="4_cyasb"]
+[ext_resource type="Texture2D" uid="uid://cn7bvnifiniw8" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/environment/layers/back.png" id="3_oiqui"]
 [ext_resource type="Texture2D" uid="uid://vyhqgix3ixrb" path="res://icon.svg" id="6_5fk7m"]
 [ext_resource type="PackedScene" uid="uid://cxnit1wuxsumx" path="res://Clase 1 - Introduccionn/GodotPlush.tscn" id="7_hkhas"]
-[ext_resource type="Texture2D" uid="uid://c25rqwhxttlms" path="res://Assets Generales/Sprites/Propios/Logos GiGame/ACM-GiGame.png" id="7_rdkef"]
+[ext_resource type="Texture2D" uid="uid://dpl8l6c77ddid" path="res://Assets Generales/Sprites/Propios/Logos GiGame/ACM-GiGame.png" id="7_rdkef"]
+[ext_resource type="PackedScene" uid="uid://7pp2ss1dd7c2" path="res://Clase 1 - Introduccionn/JugadorPlataformero.tscn" id="8_6lely"]
 [ext_resource type="PackedScene" uid="uid://v3bbiesfht3u" path="res://Clase 6/Plataforma/Plataforma.tscn" id="8_cdcoc"]
-[ext_resource type="Texture2D" uid="uid://2jdmgobrvygd" path="res://Assets Generales/Sprites/mystic_woods_free_2.1/sprites/characters/slime.png" id="9_pnf3i"]
-
+[ext_resource type="Texture2D" uid="uid://b0sihiu37b3o3" path="res://Assets Generales/Sprites/mystic_woods_free_2.1/sprites/characters/slime.png" id="9_pnf3i"]
 
 [sub_resource type="Curve2D" id="Curve2D_scjhi"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 3200, 400, 0, 0, 0, 0, 3712, 400, 0, 0, 0, 0, 3200, 400)
+"points": PackedVector2Array(0, 0, 0, 0, 3000, 400, 0, 0, 0, 0, 3762, 400, 0, 0, 0, 0, 3000, 400)
 }
 point_count = 3
 
@@ -250,12 +249,12 @@ format = 2
 curve = SubResource("Curve2D_scjhi")
 
 [node name="Plataforma" parent="Mundo/Escenario/CaminoPlataforma" node_paths=PackedStringArray("seguidor") instance=ExtResource("8_cdcoc")]
-position = Vector2(3200, 400)
+position = Vector2(3000, 400)
 seguidor = NodePath("../PathFollow2D")
 velocidad = 200
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Mundo/Escenario/CaminoPlataforma"]
-position = Vector2(3200, 400)
+position = Vector2(3000, 400)
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Mundo/Escenario/CaminoPlataforma/PathFollow2D"]
 remote_path = NodePath("../../Plataforma")
@@ -276,11 +275,10 @@ position = Vector2(5566.22, -6.19888e-06)
 scale = Vector2(0.256256, 0.256256)
 texture = ExtResource("7_rdkef")
 
-[node name="Jugador_AP" parent="Mundo" instance=ExtResource("4_cyasb")]
-position = Vector2(248, 288)
-metadata/_edit_group_ = true
+[node name="JugadorPlataformero" parent="Mundo" instance=ExtResource("8_6lely")]
+position = Vector2(243, 280)
 
-[node name="Camera2D" type="Camera2D" parent="Mundo/Jugador_AP"]
+[node name="Camera2D" type="Camera2D" parent="Mundo/JugadorPlataformero"]
 limit_left = 0
 limit_top = -300
 limit_right = 20000
